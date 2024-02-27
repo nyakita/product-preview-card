@@ -30,7 +30,7 @@ html{
 .container{
     display:flex;
     flex-direction:column;
-    background:var(--neutral-3);
+    /* background:var(--neutral-3); */
     max-width:340px;
     margin:0 auto;
     border-radius:10px;
@@ -59,6 +59,7 @@ html{
   }
   .container-body{
     padding:20px;
+    background:var(--neutral-3);
   }
   .items{
     display:flex;
@@ -90,7 +91,59 @@ html{
     font-family:var(--fontFamily-1);
     font-weight:500;
     font-size:.75rem;
+    cursor:pointer;
+  }
+  .btn:hover{
+    background-color:#0b631a;
+    color:var(--neutral-3);
   }
   .cart{
     margin-right:10px;
+  }
+  .attribution{
+    text-align:center;
+  }
+  @media screen and (min-width:376px){
+    .myClass{
+      content:url("images/image-product-desktop.jpg");
+      max-width:70%;
+      object-fit:cover;
+    }
+    .container{
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+    }
+    .container-body{
+      background:var(--neutral-3);
+      /* padding:3rem; */
+      /* line-height: 2; */
+    }
+
+      h1{
+        font-size:.6rem;
+        font-weight: 400;
+      }
+
+      h2{
+        font-size:1.7rem;
+      }
+      .container-body p {
+        font-size:.7rem;
+        font-weight:500;
+        margin-bottom:1.5rem;
+      }
+      .items{
+        margin-bottom:1.5rem;
+      }
+      .btn{
+        cursor:pointer;
+      }
+      .btn:hover{
+        background-color:#0b631a;
+        color:var(--neutral-3);
+      }
+      .attribution{
+        text-align:center;
+      }
   }
