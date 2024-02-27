@@ -17,40 +17,14 @@ html{
   --fontFamily-1:"Montserrat";
   --fontFamily-2:"Fraunces";
 }
-@media screen and (min-width:425px){
-  body{
-    background-color:var(--primary-2);
-    margin:0 auto;
-    width:90%;
-  }
-  .myClass{
-    content:url("images/image-product-desktop.jpg");
-    object-fit:cover;
-    border-radius:10px;
-    width:60%;
-  }
-  .container{
-    display:flex;
-    border:2px solid orange;
-    justify-content:space-between;
-    align-items:center;
-    background:var(--neutral-3);
-  }
-  .container-body{
-    width:35%;
-    display:flex;
-    flex-direction:column;
-  }
-}
 
-@media screen and (max-width:375px){
   body{
     background:var(--primary-2);
   }
   .myClass{
     content:url("images/image-product-mobile.jpg");
     border-radius:10px;
-    width:100%;
+    max-width:100%;
   }
 
 .container{
@@ -120,4 +94,3 @@ html{
   .cart{
     margin-right:10px;
   }
-}
